@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Mcommerce</title>
+
+    <link href="http://localhost:8080/webjars/bootstrap/4.0.0-2/css/bootstrap.min.css" rel="stylesheet"
+          type="text/css"/>
+
+</head>
+<body>
+
+
+<div class="container">
+
+    <h1 class="text-center">Application Mcommerce</h1>
+
+    <div class="row">
+        <div class="col-md-4 mx-auto mt-5 text-center">
+
+            <p th:if="${paiementOk}">
+                Paiement Accepté
+            </p>
+
+            <p th:unless="${paiementOk}">
+                Le paiement n'a pas abouti
+            </p>
+
+
+        </div>
+    </div>
+
+</div>
+
+
+<script src="http://localhost:8080/webjars/bootstrap/4.0.0-2/js/bootstrap.min.js" type="text/javascript"></script>
+
+</body>
+</html>

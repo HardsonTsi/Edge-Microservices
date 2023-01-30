@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Mcommerce</title>
+
+    <link href="webjars/bootstrap/4.0.0-2/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+
+
+<div class="container">
+
+    <h1 class="text-center">Application Mcommerce</h1>
+
+    <div class="row">
+
+        <!--
+        Boucle sur tous les objets de type "produit" de la liste et affichage des informations produit.
+        -->
+        <div class="col-md-4 my-1" th:each="produit : ${produits}">
+            <a th:href="@{|/details-produit/${produit.id}|}">
+                <img class="card-img-top" th:src="${produit.image}"/>
+                <p th:text="${produit.titre}"></p>
+            </a>
+        </div>
+    </div>
+
+</div>
+
+
+<script src="webjars/bootstrap/4.0.0-2/js/bootstrap.min.js" type="text/javascript"></script>
+
+</body>
+</html>

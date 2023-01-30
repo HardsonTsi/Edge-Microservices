@@ -1,15 +1,13 @@
-package com.mpayement;
-
+package com.mconnerce.configserver;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-
 @SpringBootTest
-public class MpayementApplicationTests {
+class ConfigServerApplicationTests {
 
-    @Test
-    void contextLoads() {
-    }
+	@Test
+	void contextLoads() {
+	}
 
 }

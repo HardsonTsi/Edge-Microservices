@@ -15,14 +15,12 @@ import java.util.Optional;
 public class ProductController {
 
 
+    private final ProductDao productDao;
+    private final ApplicationPropertiesConfiguration appProperties;
     public ProductController(ProductDao productDao, ApplicationPropertiesConfiguration appProperties) {
         this.productDao = productDao;
         this.appProperties = appProperties;
     }
-
-    private final ProductDao productDao;
-    private final ApplicationPropertiesConfiguration appProperties;
-
 
     // Affiche la liste de tous les produits disponibles
     @GetMapping(value = "/Produits")

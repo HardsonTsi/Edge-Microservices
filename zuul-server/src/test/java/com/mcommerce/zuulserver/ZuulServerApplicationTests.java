@@ -1,10 +1,10 @@
-package com.mconnerce.configserver;
+package com.mcommerce.zuulserver;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ConfigServerApplicationTests {
+class ZuulServerApplicationTests {
 
 	@Test
 	void contextLoads() {
